@@ -9,24 +9,24 @@ import java.util.Date;
 import java.util.Locale;
 
 public class Student implements Comparable {
-    // поле ИД СТУДЕНТА
+    // РїРѕР»Рµ РР” РЎРўРЈР”Р•РќРўРђ
     private int studentId;
-    // поле ИМЯ
+    // РїРѕР»Рµ РРњРЇ
     private String firstName;
-    // поле ФАМИЛИЯ
+    // РїРѕР»Рµ Р¤РђРњРР›РРЇ
     private String surName;
-    // поле ОТЧЕСТВО
+    // РїРѕР»Рµ РћРўР§Р•РЎРўР’Рћ
     private String patronymic;
-    // поле ДАТА РОЖДЕНИЯ
+    // РїРѕР»Рµ Р”РђРўРђ Р РћР–Р”Р•РќРРЇ
     private Date dateOfBirth;
-    // поле ПОЛ
+    // РїРѕР»Рµ РџРћР›
     private char sex;
-    // поле ИД ГРУППЫ
+    // РїРѕР»Рµ РР” Р“Р РЈРџРџР«
     private int groupId;
-    // поле ГОД ОБУЧЕНИЯ
+    // РїРѕР»Рµ Р“РћР” РћР‘РЈР§Р•РќРРЇ
     private int educationYear;
 
-    // get/set для ДАТА РОЖДЕНИЯ
+    // get/set РґР»СЏ Р”РђРўРђ Р РћР–Р”Р•РќРРЇ
     public Date getDateOfBirth() {
         return dateOfBirth;
     }
@@ -35,7 +35,7 @@ public class Student implements Comparable {
         this.dateOfBirth = dateOfBirth;
     }
 
-    // get/set для ГОД ОБУЧЕНИЯ
+    // get/set РґР»СЏ Р“РћР” РћР‘РЈР§Р•РќРРЇ
     public int getEducationYear() {
         return educationYear;
     }
@@ -44,7 +44,7 @@ public class Student implements Comparable {
         this.educationYear = educationYear;
     }
 
-    // get/set для ИД ГРУППЫ
+    // get/set РґР»СЏ РР” Р“Р РЈРџРџР«
     public int getGroupId() {
         return groupId;
     }
@@ -53,7 +53,7 @@ public class Student implements Comparable {
         this.groupId = groupId;
     }
 
-    // get/set для ИД СТУДЕНТА
+    // get/set РґР»СЏ РР” РЎРўРЈР”Р•РќРўРђ
     public int getStudentId() {
         return studentId;
     }
@@ -62,7 +62,7 @@ public class Student implements Comparable {
         this.studentId = studentId;
     }
 
-    // get/set для ИМЯ
+    // get/set РґР»СЏ РРњРЇ
     public String getFirstName() {
         return firstName;
     }
@@ -71,7 +71,7 @@ public class Student implements Comparable {
         this.firstName = firstName;
     }
 
-    // get/set для ОТЧЕСТВО
+    // get/set РґР»СЏ РћРўР§Р•РЎРўР’Рћ
     public String getPatronymic() {
         return patronymic;
     }
@@ -80,7 +80,7 @@ public class Student implements Comparable {
         this.patronymic = patronymic;
     }
 
-    // get/set для ФАМИЛИЯ
+    // get/set РґР»СЏ Р¤РђРњРР›РРЇ
     public String getSurName() {
         return surName;
     }
@@ -89,7 +89,7 @@ public class Student implements Comparable {
         this.surName = surName;
     }
 
-    // get/set для ПОЛ
+    // get/set РґР»СЏ РџРћР›
     public char getSex() {
         return sex;
     }
@@ -98,13 +98,13 @@ public class Student implements Comparable {
         this.sex = sex;
     }
 
-    // DateFormat - класс для преобразования даты
-    // в строку в определеннном формате.
-    // Подробнее смотрите документацию по этому методу
+    // DateFormat - РєР»Р°СЃСЃ РґР»СЏ РїСЂРµРѕР±СЂР°Р·РѕРІР°РЅРёСЏ РґР°С‚С‹
+    // РІ СЃС‚СЂРѕРєСѓ РІ РѕРїСЂРµРґРµР»РµРЅРЅРЅРѕРј С„РѕСЂРјР°С‚Рµ.
+    // РџРѕРґСЂРѕР±РЅРµРµ СЃРјРѕС‚СЂРёС‚Рµ РґРѕРєСѓРјРµРЅС‚Р°С†РёСЋ РїРѕ СЌС‚РѕРјСѓ РјРµС‚РѕРґСѓ
     public String toString() {
         return surName + " " + firstName + " " + patronymic + ", "
                 + DateFormat.getDateInstance(DateFormat.SHORT).format(dateOfBirth)
-                + ", Группа ИД=" + groupId + " Год:" + educationYear;
+                + ", Р“СЂСѓРїРїР° РР”=" + groupId + " Р“РѕРґ:" + educationYear;
     }
 
     public int compareTo(Object obj) {
