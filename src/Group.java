@@ -3,16 +3,16 @@
  */
     public class Group {
 
-        // ïîëå ÈÄ ÃĞÓÏÏÛ
+        // Ğ¿Ğ¾Ğ»Ğµ Ğ˜Ğ” Ğ“Ğ Ğ£ĞŸĞŸĞ«
         private int groupId;
-        // ïîëå ÈÌß ÃĞÓÏÏÛ
+        // Ğ¿Ğ¾Ğ»Ğµ Ğ˜ĞœĞ¯ Ğ“Ğ Ğ£ĞŸĞŸĞ«
         private String nameGroup;
-        // ïîëå ÊÓĞÀÒÎĞ
+        // Ğ¿Ğ¾Ğ»Ğµ ĞšĞ£Ğ ĞĞ¢ĞĞ 
         private String curator;
-        // ïîëå ÑÏÅÖÈÀËÜÍÎÑÒÜ
+        // Ğ¿Ğ¾Ğ»Ğµ Ğ¡ĞŸĞ•Ğ¦Ğ˜ĞĞ›Ğ¬ĞĞĞ¡Ğ¢Ğ¬
         private String speciality;
 
-        // get/set äëÿ ÊÓĞÀÒÎĞ
+        // get/set Ğ´Ğ»Ñ ĞšĞ£Ğ ĞĞ¢ĞĞ 
         public String getCurator() {
             return curator;
         }
@@ -21,7 +21,7 @@
             this.curator = curator;
         }
 
-        // get/set äëÿ ÈÄ ÃĞÓÏÏÛ
+        // get/set Ğ´Ğ»Ñ Ğ˜Ğ” Ğ“Ğ Ğ£ĞŸĞŸĞ«
         public int getGroupId() {
             return groupId;
         }
@@ -30,7 +30,7 @@
             this.groupId = groupId;
         }
 
-        // get/set äëÿ ÈÌß ÃĞÓÏÏÛ
+        // get/set Ğ´Ğ»Ñ Ğ˜ĞœĞ¯ Ğ“Ğ Ğ£ĞŸĞŸĞ«
         public String getNameGroup() {
             return nameGroup;
         }
@@ -39,7 +39,7 @@
             this.nameGroup = nameGroup;
         }
 
-        // get/set äëÿ ÑÏÅÖÈÀËÜÍÎÑÒÜ
+        // get/set Ğ´Ğ»Ñ Ğ¡ĞŸĞ•Ğ¦Ğ˜ĞĞ›Ğ¬ĞĞĞ¡Ğ¢Ğ¬
         public String getSpeciality() {
             return speciality;
         }
